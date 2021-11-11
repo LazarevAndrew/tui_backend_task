@@ -1,5 +1,5 @@
 import { apiClient } from "./apiClient";
-import { UserRepo, RepoBranch } from "./interfaces";
+import { UserRepo, RepoBranch } from "../interfaces";
 
 export const getUserRepos = (userName: string): Promise<{data: UserRepo[]}> => apiClient
   .get(`/users/${userName}/repos`);

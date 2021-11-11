@@ -1,4 +1,4 @@
-import { getUserRepos, getRepoBranches } from "../adapters";
+import { getUserRepos, getRepoBranches } from "../api/adapters";
 import { RepoWithBranches } from "../interfaces";
 
 export async function getUserReposWithBranches(userName: string): Promise<RepoWithBranches[]> {

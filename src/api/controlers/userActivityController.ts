@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import {getUserReposWithBranches} from "../services/userActivityService";
+import {getUserReposWithBranches} from "../../services/userActivityService";
 
 export async function getUserActivity(req: Request, res: Response) {
   try {

@@ -2,9 +2,9 @@ import express, { Application } from "express";
 import morgan from "morgan";
 import swaggerUi from "swagger-ui-express";
 
-import swaggerSpec, { swaggerUiOptions } from './swagger/swaggerSpec';
+import swaggerSpec, { swaggerUiOptions } from './api/swagger/swaggerSpec';
 
-import Router from "./routes";
+import Router from "./api/routes";
 
 const PORT = process.env.PORT || 8000;
 
