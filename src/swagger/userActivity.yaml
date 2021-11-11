@@ -1,0 +1,75 @@
+paths:
+  /github-user-activity/{userName}:
+    get:
+      tags:
+        - "User Activity"
+      summary: Get GITHUB User Activity by userName
+      parameters:
+        - name: userName
+          description: github user name
+          in: path
+          required: true
+          schema:
+            type: string
+            example: tannerlinsley
+      responses:
+        200:
+          description: List of all user's repositories with branch info
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GithubUserActivity"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFound'
+        406:
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotAcceptable'
+components:
+  schemas:
+    NotAcceptable:
+      type: object
+      properties:
+        status:
+          type: number
+          example: 406
+        Message:
+          type: string
+          example: Not Acceptable
+    NotFound:
+      type: object
+      properties:
+        status:
+          type: number
+          example: 404
+        Message:
+          type: string
+          example: Not Found
+    GithubUserActivity:
+      type: array
+      items:
+        type: object
+        properties:
+          repoName:
+            type: string
+            example: babel-plugin-source
+          ownerLogin:
+            type: string
+            example: tannerlinsley
+          branches:
+            type: array
+            items:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: master
+                lastCommitSha:
+                  type: string
+                  example: 30d38fc1241ca7a545cd7e107b97f7df2634989d
