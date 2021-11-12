@@ -27,7 +27,7 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupName: ContainerSecurityGroup
-      GroupDescription: Security group for NGINX container
+      GroupDescription: Security group for container
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 80
@@ -43,7 +43,7 @@ Resources:
       ExecutionRoleArn: !Ref ExecutionRole
       ContainerDefinitions:
         - Name: github-user-activity-container
-          Image: 932503929731.dkr.ecr.eu-central-1.amazonaws.com/github-user-activity-api
+          Image: 932503929731.dkr.ecr.eu-central-1.amazonaws.com/github-user-activity-app
           PortMappings:
             - ContainerPort: 80
           LogConfiguration:
@@ -53,7 +53,6 @@ Resources:
               awslogs-group: !Ref LogGroup
               awslogs-stream-prefix: ecs
       RequiresCompatibilities:
-        - EC2
         - FARGATE
   Service:
     Type: AWS::ECS::Service
