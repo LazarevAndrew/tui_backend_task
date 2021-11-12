@@ -18,3 +18,6 @@ The page will reload if you make edits.
 ### `yarn build`
 
 Builds the app for production to the `build` folder.
+
+
+### Public IP `3.127.39.125`
