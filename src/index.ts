@@ -6,7 +6,7 @@ import swaggerSpec, { swaggerUiOptions } from './api/swagger/swaggerSpec';
 
 import Router from "./api/routes";
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 80;
 
 const app: Application = express();
 
@@ -19,5 +19,5 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, swaggerUiOptions)
 app.use(Router);
 
 app.listen(PORT, () => {
-  console.log("Server is running on port", PORT);
+  console.log("Server is running on port:", PORT);
 });

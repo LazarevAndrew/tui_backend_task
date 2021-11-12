@@ -9,12 +9,12 @@ In the project directory, you can run:
 
 ### `yarn dev`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 You will be automatically redirects to `/docs` page
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
