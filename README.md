@@ -1,7 +1,6 @@
 # TUI Backend task
 This app was builded as a backend test task for TUI project.
 App provides a single endpoint for collecting repositories with their branches by userName.
-Due to the fact that is a test task I omitted some setups like linters, pre-commit hooks and code coverage.
 
 ## Available Scripts
 
