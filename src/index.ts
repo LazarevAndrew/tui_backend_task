@@ -6,7 +6,7 @@ import swaggerSpec, { swaggerUiOptions } from './api/swagger/swaggerSpec';
 
 import Router from "./api/routes";
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8000;
 
 const app: Application = express();
 
