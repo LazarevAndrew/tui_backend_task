@@ -16,14 +16,14 @@ export interface RepoBranch {
   name: string;
   commit: {
     sha: string;
-  },
+  };
 }
 
 export interface RepoWithBranches {
-  repoName: string
+  repoName: string;
   ownerLogin: string;
   branches: {
     name: string;
-    lastCommitSha: string
-  }[]
+    lastCommitSha: string;
+  }[];
 }
