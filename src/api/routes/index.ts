@@ -2,7 +2,7 @@ import { Router } from "express";
 import asyncHandler from "express-async-handler";
 
 import getUserActivity from "../controlers/userActivityController";
-import typeValidator from "../validators";
+import typeValidator from "../middlewares/validatorsMiddleware";
 
 const router = Router();
 

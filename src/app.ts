@@ -5,6 +5,7 @@ import swaggerUi from "swagger-ui-express";
 import swaggerSpec, { swaggerUiOptions } from "./api/swagger/swaggerSpec";
 
 import Router from "./api/routes";
+import errorMiddleware from "./api/middlewares/errorMiddleware";
 
 const app: Application = express();
 
@@ -19,5 +20,6 @@ app.use(
 );
 
 app.use(Router);
+app.use(errorMiddleware);
 
 export default app;

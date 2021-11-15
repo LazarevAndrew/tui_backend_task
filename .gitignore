@@ -4,4 +4,8 @@
 # production
 /build
 
+# jest coverage report
+/coverage/
+
+# jetbrains
 /.idea/
