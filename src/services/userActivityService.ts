@@ -4,11 +4,11 @@ import { RepoWithBranches } from "../interfaces";
 export default async function getUserReposWithBranches(
   userName: string
 ): Promise<RepoWithBranches[]> {
-  const { data: repos } = await getUserRepos(userName);
+  const repos = await getUserRepos(userName);
   const requests = repos
     .filter((r) => !r.fork)
     .map(async (repo) => {
-      const { data: repoBranches } = await getRepoBranches(repo.full_name);
+      const repoBranches = await getRepoBranches(repo.full_name);
       const result: RepoWithBranches = {
         repoName: repo.name,
         ownerLogin: repo.owner.login,
