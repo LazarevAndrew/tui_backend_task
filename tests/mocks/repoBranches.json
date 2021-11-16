@@ -1,0 +1,26 @@
+[
+  {
+    "name": "add-tutorial-series",
+    "commit": {
+      "sha": "38c8cbe9b8e9287beda66e708b1941251f7fa416",
+      "url": "https://api.github.com/repos/tannerlinsley/awesome-redux/commits/38c8cbe9b8e9287beda66e708b1941251f7fa416"
+    },
+    "protected": false
+  },
+  {
+    "name": "master",
+    "commit": {
+      "sha": "5a1faa33c001822fb76954ed378df1b17e54d399",
+      "url": "https://api.github.com/repos/tannerlinsley/awesome-redux/commits/5a1faa33c001822fb76954ed378df1b17e54d399"
+    },
+    "protected": false
+  },
+  {
+    "name": "patch-1",
+    "commit": {
+      "sha": "3d7fb152bfb4a8486b42b3a664913084d2f71557",
+      "url": "https://api.github.com/repos/tannerlinsley/awesome-redux/commits/3d7fb152bfb4a8486b42b3a664913084d2f71557"
+    },
+    "protected": false
+  }
+]
