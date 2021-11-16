@@ -1,11 +1,11 @@
 import { mocked } from "ts-jest/utils";
+import Mock = jest.Mock;
 
 import { getRepoBranches, getUserRepos } from "../../../src/api/adapters";
 import mockRepos from "../../mocks/reposList.json";
 import mockRepoBranches from "../../mocks/repoBranches.json";
 import userActivityService from "../../../src/services/userActivityService";
 import { RepoWithBranches } from "../../../src/interfaces";
-import Mock = jest.Mock;
 
 jest.mock("../../../src/libs/apiClient");
 jest.mock("../../../src/api/adapters");

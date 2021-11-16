@@ -46,8 +46,7 @@
     "dev": "nodemon",
     "lint": "npx eslint .",
     "lint.fix": "npx eslint . --fix",
-    "test:unit": "jest tests/unit --colors --coverageDirectory=coverage/unit --forceExit --collect-coverage",
-    "test": "yarn run lint.fix && yarn run test:unit && yarn run test:integration"
+    "test": "yarn run lint.fix &&  jest tests --colors --coverageDirectory=coverage --forceExit --collect-coverage --detectOpenHandles"
   },
   "nodemonConfig": {
     "watch": [
