@@ -3,7 +3,7 @@ interface RepoOwner {
   id: number;
 }
 
-export interface UserRepo {
+export interface Repo {
   id: string;
   name: string;
   full_name: string;
