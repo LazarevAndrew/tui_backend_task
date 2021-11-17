@@ -44,6 +44,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon",
+    "start": "node build/index.js",
     "lint": "npx eslint .",
     "lint.fix": "npx eslint . --fix",
     "test": "yarn run lint.fix &&  jest tests --colors --coverageDirectory=coverage --forceExit --collect-coverage --detectOpenHandles"
